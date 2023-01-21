@@ -4,7 +4,7 @@ import { List } from './ContactList.styled';
 
 const ContactList = ({ contacts, onDelete }) => {
   return (
-    <List>
+    <List contacts={contacts}>
       {contacts.map(({ id, name, number }) => (
         <ContactListItem
           key={id}
