@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Item = styled.li`
   display: flex;
+  padding: ${props => props.theme.spacing(2)};
   align-items: center;
   justify-content: space-between;
 `;
